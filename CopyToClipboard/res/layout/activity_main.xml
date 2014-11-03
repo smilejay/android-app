@@ -1,0 +1,46 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:columnCount="2"
+    tools:context="com.smilejay.copy2clipboard.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/inputTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_row="0"
+        android:labelFor="@+id/inputEditText"
+        android:padding="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/inputText"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="right|top"
+        android:layout_row="1"
+        android:text="@string/copy2clipboard" />
+
+</GridLayout>
